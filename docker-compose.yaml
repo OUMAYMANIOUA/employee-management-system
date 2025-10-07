@@ -19,6 +19,7 @@ services:
     build:
       context: ./ems-backend
       dockerfile: Dockerfile
+    image: ems-backend-backend
     container_name: springboot-app
     restart: always
     ports:
@@ -36,6 +37,7 @@ services:
     build:
       context: ./ems-frontend/ems-frontend
       dockerfile: Dockerfile
+    image: ems-backend-frontend
     container_name: react-app
     restart: always
     ports:
